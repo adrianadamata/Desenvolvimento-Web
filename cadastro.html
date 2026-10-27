@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro com Validação Dinâmica</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+
+    <main class="container">
+        <form id="form-cadastro" class="card">
+            <h2>Criar Conta</h2>
+
+            <div class="grupo-campo">
+                <label for="nome">Nome Completo
+                </label>
+                <input type="text" id="nome" 
+                placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" 
+                placeholder="seu@email.com" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" 
+                placeholder="Digite sua senha" required>
+                
+                <!-- Requisitos dinâmicos da senha -->
+                <ul class="lista-requisitos">
+                    <li id="req-tamanho" class="requisito">
+                        Até 8 ou mais caracteres</li>
+                    <li id="req-maiuscula" class="requisito">
+                        Pelo menos uma letra maiúscula</li>
+                    <li id="req-numero" class="requisito">
+                        Pelo menos um número</li>
+                    <li id="req-especial" class="requisito">
+                        Pelo menos um caractere especial (@, #, $, 
+                        etc.)</li>
+                </ul>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="confirma-senha">Confirmar Senha
+                </label>
+                <input type="password" id="confirmar-senha" 
+                placeholder="Repita a senha" required>
+            </div>
+
+            <button type="submit" class="btn">Finalizar 
+                Cadastro</button>
+        </form>
+    </main>
+    <script src="js/cadastro.js"></script>
+</body>
+</html>
