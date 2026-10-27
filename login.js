@@ -25,16 +25,21 @@ formLogin.addEventListener('submit', (event) => {
     const email = inputEmail.value;
     const senha = inputSenha.value;
 
-    if (email && senha.length >= 8) {
+    const dadosSalvos = localStorage.getItem('usuarioCadastrado');
+    const usuarioCadastrado = dadosSalvos ? JSON.parse(dadosSalvos): null;
+
+    if (usuarioCadastrado && email === usuarioCadastrado.email
+        && senha === usuarioCadastrado.senha) {
+
         btnLogin.textContent = 'Autenticando ...';
-        [link suspeito removido].backgroundColor = '#28a745';
+        btnLogin.style.backgroundColor = '#28a745';
 
         setTimeout(() => {
             alert('Bem-vindo ao Portal do Aluno! \nUsuário: ${email}');
             btnLogin.textContent = 'Entrar';
-            [link suspeito removido].backgroundColor = '#0056b3';
+            btnLogin.style.backgroundColor = '#0056b3';
         }, 800);
     } else {
-        alert('Por favor, preencha as credenciais corretamente.');
+        alert('Email ou senha incorretos(ou cadastro não encontrado)!');
     }
 });
