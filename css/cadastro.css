@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card{
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 380px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+.grupo-campo {
+    margin-bottom: 15px;
+}
+.grupo-campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+}
+.grupo-campo input{
+    width: 100%;
+    padding: 10px; 
+    border: 2px solid #9d9c9c;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.grupo-campo input:focus {
+    border-color: #476abc;
+    background-color: #f0f8ff;
+    outline: none;
+}
+.grupo-campo input.campo-valido {
+    border-color: #28a745;
+}
+/* Requisitos da senha */
+.lista-requisitos {
+    margin-top: 10px;
+    font-size: 12px;
+    list-style:none;
+}
+.requisito {
+    color: #888;
+    margin-bottom: 5px;
+    transition: color 0.3s;
+}
+
+.requisito::before {
+    content: "\274c";
+    color: #888;
+}
+
+.requisito.valido::before {
+    content: "\2714  "; /* "\2705" ou "\2714") */
+    color: #28a745;
+}
+
+.campo-valido{
+    border-color: #28a745;
+    background-color: #f4fff6;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #0056b3;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+} 

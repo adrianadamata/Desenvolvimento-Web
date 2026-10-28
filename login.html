@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Aluno</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <main class="container-login">
+        <section class="card-login">
+            <div class="cabecalho-card">
+            <div class="logo-icone">&#x1F393</div>
+            <h2>Acessar Portal</h2>
+            <p> Digite suas credenciais para entrar na sua conta</p>
+            </div>
+
+            <form id="form-login" action='/login' method="post">
+                <div class="grupo-campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" 
+                    placeholder="aluno@ifpa.edu.br" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" 
+                    placeholder="*********" required>
+                </div>
+
+                <div class="opcoes-login">
+                   <label class="lembrar-senha">
+                    <input type="checkbox" name="lembrar-senha" id="lembrar-senha">
+                    <span> Lembrar senha </span>
+                   </label>
+                   <a href="#" class="esqueceu-senha">Esqueceu a senha?</a>
+                </div>
+
+                <button type="submit" class="btn-login" id="btn-login">Entrar</button>
+             </form>
+
+             <div class="rodape-card">
+                <p>Ainda não possui uma conta? 
+                    <a href="cadastro.html">Cadastre-se aqui</a></p>
+            </div>
+        </section>
+    </main>
+    <script src="js/login.js"></script>
+</body>
+</html>

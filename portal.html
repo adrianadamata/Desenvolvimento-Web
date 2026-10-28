@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Aluno</title>
+    <link rel="stylesheet" href="css/portal.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <span> &#x1F393 Portal do Aluno</span>
+        </div>
+        <div class="usuario-info">
+            <span id="nome-usuario"> Carregando ...</span>
+            <button id="btn-logout" class="btn-sair"> Sair </button>
+        </div>
+    </header>
+
+    <main class="container-dashboard">
+
+        <section class="boas-vindas">
+            <h1 id="titulo-boas-vindas" >Bem Vindo(a)!</h1>
+            <p>
+                Confira o resumo das suas atividades acadêmicas nesta semana.
+            </p>
+        </section>
+
+        <div class="grid-cards">
+            <article class="card-info">
+                <h3> &#x1F4DA Minhas Disciplinas </h3>
+                <ul>
+                    <li> Desenvolvimento Web </li>
+                    <li> Banco de Dados </li>
+                    <li> História </li>
+                </ul>
+            </article>
+
+            <article class="card-info">
+                <h3> &#x1F4CA Frequência </h3>
+                <p class="destaque-verde"> 95% de presença </p>
+                <small>Parabéns, você está dentro do limite recomendado!</small>
+            </article>
+
+            <article class="card-info">
+                <h3> &#x1F4E2 Avisos da Turma </h3> 
+                <p > 
+                    <strong>
+                        Apresentação do Projeto: 
+                    </strong>
+                    Na próxima aula, teremos o teste prático de integração HTML/CSS/JS.
+                </p>
+            </article>
+        </div>
+    </main>
+    <script src="js/portal.js"></script>
+</body>
+</html>
