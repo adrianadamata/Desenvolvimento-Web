@@ -1,0 +1,1 @@
+Para rodar o Portal do Aluno primeiro cadastre-se.
