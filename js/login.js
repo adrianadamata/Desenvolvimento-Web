@@ -2,6 +2,7 @@ const formLogin =  document.getElementById('form-login');
 const inputEmail = document.getElementById('email');
 const inputSenha = document.getElementById('senha');
 const btnLogin = document.getElementById('btn-login');
+const btnVerSenha = document.getElementById('btn-ver-senha');
 
 inputEmail.addEventListener('input', () => {
     if (inputEmail.checkValidity() && inputEmail.value.trim() !== '') {
@@ -16,6 +17,16 @@ inputSenha.addEventListener('input', () => {
         inputSenha.classList.add('campo-valido');
     } else {
         inputSenha.classList.remove('campo-valido');
+    }
+});
+
+btnVerSenha.addEventListener('click', () => {
+    if(inputSenha.type === 'password'){
+        inputSenha.type = 'text';
+        btnVerSenha.textContent = 'Ocultar';
+    } else{
+        inputSenha.type = 'password';
+        btnVerSenha.textContent = 'Mostrar';
     }
 });
 
