@@ -134,3 +134,25 @@ body {
 .rodape-card a:hover{
     text-decoration: underline;
 }
+.campo-senha{
+    position:relative;
+}
+
+.campo-senha {
+    position: relative;
+}
+.campo-senha input {
+    padding-right: 45px; /* evita o texto ficar embaixo do olhinho */
+}
+.btn-ver-senha {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1;
+    padding: 4px;
+}

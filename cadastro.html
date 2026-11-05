@@ -16,6 +16,27 @@
                 </label>
                 <input type="text" id="nome" 
                 placeholder="Digite seu nome" required>
+                <small id="contador-nome" style="color: #5d5c5c; 
+                font-size: 12px;">0 caracteres digitados</small>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" placeholder="00000000" maxlength="8" required>
+                <small id="erro-cep" style="color: #dc3545; display: nome; font-size: 12px;">CEP não encontrado!</small>
+            </div>
+
+            <div class="grupo-campo" style="display: flex; gap:10px;">
+                <div style="flex: 3;">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" placeholder="Cidade" 
+                    readonly required>
+                </div>
+                <div style="flex: 1;">
+                    <label for="estado">UF:</label>
+                    <input type="text" id="estado" placeholder="UF" maxlength="2" 
+                    readonly required>
+                </div>
             </div>
 
             <div class="grupo-campo">
