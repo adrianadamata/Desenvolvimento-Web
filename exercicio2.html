@@ -1,0 +1,60 @@
+//📝 PARTE 1: Exercício de Lacunas no portal.html
+// Complete as lacunas do HTML com as tags e atributos corretos para estruturar a tela do Portal do Aluno:
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Aluno</title>
+    <!-- 1. Ligação com o arquivo de estilo externo -->
+    <link rel="stylesheet" ________="css/portal.css">
+</head>
+<body>
+    <!-- 2. Cabeçalho principal da página -->
+    <____________ class="navbar">
+        <div class="logo">
+            <span> &#x1F393; Portal do Aluno</span>
+        </div>
+        <div class="usuario-info">
+            <!-- 3. Elemento com identificador único para receber o nome via JS -->
+            <span ________="nome-usuario"> Carregando ...</span>
+            
+            <!-- 4. Elemento de botão para acionar o logout -->
+            <____________ id="btn-logout" class="btn-sair"> Sair </button>
+        </div>
+    </header>
+
+    <main class="container-dashboard">
+        <section class="boas-vindas">
+            <h1 id="titulo-boas-vindas">Bem Vindo(a)!</h1>
+            <p>Confira o resumo das suas atividades acadêmicas nesta semana.</p>
+        </section>
+
+        <div class="grid-cards">
+            <article class="card-info">
+                <h3> &#x1F4DA; Minhas Disciplinas </h3>
+                <!-- 5. Tag para lista não ordenada -->
+                <____>
+                    <!-- 6. Tag para cada item da lista -->
+                    <____> Desenvolvimento Web </li>
+                    <li> Banco de Dados </li>
+                    <li> História </li>
+                </ul>
+            </article>
+
+            <article class="card-info">
+                <h3> &#x1F4CA; Frequência </h3>
+                <p class="destaque-verde"> 95% de presença </p>
+                <small>Parabéns, você está dentro do limite recomendado!</small>
+            </article>
+        </div>
+    </main>
+
+    <!-- 7. Importação do arquivo de script no final da página -->
+    <script ________="js/portal.js"></script>
+</body>
+</html>
+
+/* BANCO DE OPÇÕES PARA AS LACUNAS:
+   [ header | id | href | src | ul | li | button ]
+*/
