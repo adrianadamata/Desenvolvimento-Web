@@ -4,6 +4,13 @@ const btnLogout = document.getElementById('btn-logout');
 
 const dadosSalvos = localStorage.getItem('usuarioCadastrado');
 
+const btnTema = document.getElementById('btn-tema');
+
+btnTema.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+});
+
+
 if (!dadosSalvos) {
     alert('Acesso negado! Faça o login primeiro');
     window.location.href = 'login.html';

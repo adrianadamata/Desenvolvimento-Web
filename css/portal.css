@@ -97,3 +97,11 @@ body {
     color: #28a745;
     margin-bottom: 6px;
 }
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+body.dark-mode .card-info {
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
