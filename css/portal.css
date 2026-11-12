@@ -118,3 +118,86 @@ body.dark-mode .card-info {
 .btn-tema:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
+
+.lista-disciplinas {
+    list-style:none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.item-disciplina {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding:12px;
+    margin-bottom: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+.header-disciplina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.nome-disciplina {
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+.detalhes-notas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    margin-top: 4px;
+    text-align: center;
+}
+.media-aprovado {
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+.media-reprovado {
+    background-color: #f8d7da;
+    color: #842029;
+}
+.sem-notas {
+    font-size: 12px;
+    color: #888888;
+    font-style:italic;
+}
+.badge-nota {
+    font-size: 12px;
+    background-color: #e2e8f0;
+    color: #334155;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+.badge-media {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-left: auto;
+}
+body.dark-mode .item-disciplina {
+    background-color: #2b2b2b;
+    border-color: #3a3a3a;
+}
+
+body.dark-mode .badge-nota {
+    background-color: #3a3a3a;
+    color: #e0e0e0;
+}
+
+body.dark-mode .media-aprovado {
+    background-color: #1b4332;
+    color: #d8f3dc;
+}
+
+body.dark-mode .media-reprovado {
+    background-color: #5c1d24;
+    color: #f8d7da;
+}
