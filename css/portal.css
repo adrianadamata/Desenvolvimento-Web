@@ -150,6 +150,7 @@ body.dark-mode .card-info {
     align-items: center;
     gap: 6px;
     margin-top: 4px;
+    text-align: center;
 }
 .media-aprovado {
     background-color: #d1e7dd;
