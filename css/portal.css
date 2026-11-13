@@ -137,14 +137,12 @@ body.dark-mode .card-info {
 }
 .header-disciplina {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
 }
 .nome-disciplina {
     font-weight: bold;
     font-size: 15px;
-    text-align: center;
 }
 .detalhes-notas {
     display: flex;
@@ -152,7 +150,6 @@ body.dark-mode .card-info {
     align-items: center;
     gap: 6px;
     margin-top: 4px;
-    text-align: center;
 }
 .media-aprovado {
     background-color: #d1e7dd;
